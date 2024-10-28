@@ -1,0 +1,333 @@
+/* IMPOSTAZIONI GENERALI */
+html {font-size: 62.5%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+}
+* {box-sizing: border-box;}
+hr {display: none;} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+    font-size: 2rem;
+}
+header div img {
+    margin-bottom: 20px;
+}
+header nav ul {
+    margin: 0;
+    display: inline;
+    
+}
+header nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 16px;
+}
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+header nav li a:hover {
+    color: red;
+}
+header nav li a::before {
+    content: "\22c6\0020";
+}
+
+
+@media screen and (min-width: 1200px) {
+    header {
+        display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    height: 10rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        padding-top: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    p {
+        display: inline-block;
+        vertical-align: text-bottom;
+        padding-bottom: 16px;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+main {
+    background-color: #fff;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+section { 
+    background-color: #E3E3E3;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    background-color: #A3A3A3;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    font-size: 5.1rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+    line-height: 5.6rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px)  {
+    h1 {
+        font-size: 6rem;
+    }
+}
+    
+p, address, ul, ol, dl, blockquote {
+    margin-bottom: 1.2em;
+}
+h1 + p {
+    color: #a0a0a0;
+}
+ul, ol {
+    margin-left: 2em;
+}
+a {
+    color: #00A0C6;
+    font-weight: bold;
+}
+strong {
+    color: #a02571;
+    font-weight: bold;
+}
+code {
+    background-color: #e3e3e3;
+    border: 1px solid #969494;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
+    height: 12em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+article p {
+    font-size: 1.4em;
+}
+
+article ul {
+    font-size: 1.9rem;
+}
+
+
+article h2 {
+    font-size: 2rem;
+    line-height: 2em;
+}
+
+article ol {
+    font-size: 1.9rem;
+}
+
+
+
+
+
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+    font-size: 2.1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+table {
+    margin-inline: 120px;
+}
+
+}
+
+
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+    input {
+        padding: 5px;
+        border: 0;
+        border-bottom: 1px dashed #333;
+        width: 70%;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        padding: 4px 7px;
+        background-color: #3f6bca;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        width: 15%;
+        height: 40px;
+    }
+}
+
+
+/* ELEMENTI NELL' ASIDE */
+
+aside {
+    font-size: 1.9rem;
+}
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+/* FOOTER */
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        font-size: 2rem;
+    }
+}
+
+footer a {
+    color: fuchsia;
+}
